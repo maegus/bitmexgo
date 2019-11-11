@@ -13,9 +13,9 @@ type Order struct {
 	Symbol                string    `json:"symbol,omitempty"`
 	Side                  string    `json:"side,omitempty"`
 	SimpleOrderQty        float64   `json:"simpleOrderQty,omitempty"`
-	OrderQty              int       `json:"orderQty,omitempty"`
+	OrderQty              float64   `json:"orderQty,omitempty"`
 	Price                 float64   `json:"price,omitempty"`
-	DisplayQty            int       `json:"displayQty,omitempty"`
+	DisplayQty            float64   `json:"displayQty,omitempty"`
 	StopPx                float64   `json:"stopPx,omitempty"`
 	PegOffsetValue        float64   `json:"pegOffsetValue,omitempty"`
 	PegPriceType          string    `json:"pegPriceType,omitempty"`
@@ -31,9 +31,9 @@ type Order struct {
 	WorkingIndicator      bool      `json:"workingIndicator,omitempty"`
 	OrdRejReason          string    `json:"ordRejReason,omitempty"`
 	SimpleLeavesQty       float64   `json:"simpleLeavesQty,omitempty"`
-	LeavesQty             int       `json:"leavesQty,omitempty"`
+	LeavesQty             float64   `json:"leavesQty,omitempty"`
 	SimpleCumQty          float64   `json:"simpleCumQty,omitempty"`
-	CumQty                int       `json:"cumQty,omitempty"`
+	CumQty                float64   `json:"cumQty,omitempty"`
 	AvgPx                 float64   `json:"avgPx,omitempty"`
 	MultiLegReportingType string    `json:"multiLegReportingType,omitempty"`
 	Text                  string    `json:"text,omitempty"`

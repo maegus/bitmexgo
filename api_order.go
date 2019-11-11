@@ -42,9 +42,9 @@ type OrderAmendOpts struct {
 	OrigClOrdID     optional.String
 	ClOrdID         optional.String
 	SimpleOrderQty  optional.Float64
-	OrderQty        optional.Int
+	OrderQty        optional.Float64
 	SimpleLeavesQty optional.Float64
-	LeavesQty       optional.Int
+	LeavesQty       optional.Float64
 	Price           optional.Float64
 	StopPx          optional.Float64
 	PegOffsetValue  optional.Float64
@@ -1060,9 +1060,9 @@ OrderApiService Create a new order.
 type OrderNewOpts struct {
 	Side            optional.String
 	SimpleOrderQty  optional.Float64
-	OrderQty        optional.Int
+	OrderQty        optional.Float64
 	Price           optional.Float64
-	DisplayQty      optional.Int
+	DisplayQty      optional.Float64
 	StopPx          optional.Float64
 	ClOrdID         optional.String
 	ClOrdLinkID     optional.String
